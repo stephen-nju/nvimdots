@@ -5,7 +5,7 @@ return function()
 		options = {
 			number = nil,
 			modified_icon = icons.ui.Modified,
-			buffer_close_icon = icons.ui.Close,
+			buffer_close_icon = icons.ui.Close_alt,
 			left_trunc_marker = icons.ui.Left,
 			right_trunc_marker = icons.ui.Right,
 			max_name_length = 20,
