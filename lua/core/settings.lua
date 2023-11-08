@@ -94,7 +94,7 @@ settings["lsp_deps"] = {
 	"bashls",
 	"clangd",
 	"html",
-	"jsonls",
+	-- "jsonls",
 	"lua_ls",
 	"pylsp",
 	-- "gopls",
@@ -106,10 +106,10 @@ settings["lsp_deps"] = {
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins
 ---@type string[]
 settings["null_ls_deps"] = {
-	"clang_format",
-	"gofumpt",
-	"goimports",
-	"prettier",
+	-- "clang_format",
+	-- "gofumpt",
+	-- "goimports",
+	-- "prettier",
 	"shfmt",
 	"stylua",
 	"vint",
