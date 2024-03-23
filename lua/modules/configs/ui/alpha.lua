@@ -1,16 +1,7 @@
 return function()
 	local dashboard = require("alpha.themes.dashboard")
 	require("modules.utils").gen_alpha_hl()
-
-	dashboard.section.header.val = {	
-	[[                               __                ]],
-	[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-	[[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-	[[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-	[[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-	[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-
-	}
+	dashboard.section.header.val = require("core.settings").dashboard_image
 	dashboard.section.header.opts.hl = "AlphaHeader"
 
 	local function button(sc, txt, leader_txt, keybind, keybind_opts)
@@ -86,14 +77,6 @@ return function()
 			nowait = true,
 			callback = function()
 				require("telescope.builtin").find_files()
-			end,
-		}),
-		button("space f n", " File new", leader, nil, {
-			noremap = true,
-			silent = true,
-			nowait = true,
-			callback = function()
-				vim.api.nvim_command("enew")
 			end,
 		}),
 		button("space f w", " Word find", leader, nil, {

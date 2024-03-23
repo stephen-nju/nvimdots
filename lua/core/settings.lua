@@ -188,4 +188,17 @@ settings["neovide_config"] = {
 	cursor_vfx_particle_lifetime = 1.2,
 }
 
+-- Set the dashboard startup image here
+-- You can generate the ascii image using: https://github.com/TheZoraiz/ascii-image-converter
+-- More info: https://github.com/ayamir/nvimdots/wiki/Issues#change-dashboard-startup-image
+---@type string[]
+settings["dashboard_image"] = {
+	[[                               __                ]],
+	[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
+	[[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
+	[[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
+	[[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
+	[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+}
+
 return require("modules.utils").extend_config(settings, "user.settings")
