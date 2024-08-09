@@ -115,7 +115,6 @@ settings["lsp_deps"] = {
 	-- "jsonls",
 	"lua_ls",
 	"pylsp",
-	"gopls",
 }
 
 -- Set the general-purpose servers that will be installed during bootstrap here.
@@ -158,7 +157,7 @@ settings["treesitter_deps"] = {
 	"javascript",
 	"json",
 	"jsonc",
-	"latex",
+	-- "latex",
 	"lua",
 	"make",
 	"markdown",
